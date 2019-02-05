@@ -50,3 +50,13 @@ git checkout develop_<lastname>
 
    We've used the "branch" command again, this time with a new argument, "develop_lastname". This actually creates a new branch called *develop_lastname* for you to work in. Then, we "checkout", or basically move to, that branch. If you close and re-open this file, you'll notice that it's the same as the version that was in *develop*. This is an important concept - when you make a new branch, it has the exact same files and contents as the branch you were in when you created it. So right now, *develop* and *develop_lastname* are exactly the same! Let's change that.
    
+5. Using the File Explorer, open the *Members.txt* file, and add the details of you and your group members in the same format as I used for my information. The hope is that, after all is said and done, we have a full list of everyone that attended the lecture. When you're done modifying the file, hit save and close your text editor.
+
+6. Return to the Git Bash window and type `git status` . This should show a readout of information about the current state of your git repository: what branch you're on, what files are modified/added/removed, etc. In this case, it shows that *Members.txt* is modified, and that there are changes not staged for commit. This basically means that Git knows we changed the file, but doesn't know we want to save those changes.
+
+7. In Git Bash, enter the command `git add Members.txt` . If we now type `git status` again, it will show that *Members.txt* now has changes ready to be committed.
+
+   Git Add is used to "stage changes for commit", which basically means that we're telling Git we want to save these files when we enter the commit command in the next step. This can be done for every file individually, or you can add all files in the repository at once using `git add --all` .
+   
+8. Now it's time to save what we've done to git. Enter the command `git commit` . This will open your text editor so you can enter a commit message, which is used to tell others (and yourself) what's changed. In this case, enter something like "Added member info for (your name).", then save and close the text editor. The Git Bash window should say something like "1 file changed, x insertions, x deletion". Congratulations, you've made your first git commit!
+
