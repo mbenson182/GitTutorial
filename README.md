@@ -29,11 +29,13 @@ $ git config --global user.email you@yourdomain.example.com
 
 Typically with Git, we'd like to work on making changes to a repository without affecting things that already work, at least until we've confirmed our new changes also work. This is done using **branches**. When you first clone a repository, or start a new one, usually you end up in the *master* branch, which is typically the stable, working version of your project. Working directly in the *master* branch can make the repo stop working for other users, so we're going to make changes in a different branch. Best practice is to work on major modifications in a *develop* branch, or sub-branches of *develop*, until all the changes are tested to be working.
 
-1. You can view what branches are available in the repository by typing `git branch --list`. This should show the *master* branch and the *develop* branch.
+1. You can view what branches are available in the repository by typing `git branch --list`. This returns only the *master* branch, as it's the only one we have on our computer. 
 
    We've again used "git" to invoke a git command. This time, we want to know about our "branch" information, specifically which ones are available using "--list". 
+
+   However, if we enter the command `git hist` and look at the red text, there are actually two branches in the remote repository: *master* and *develop*.
    
-2. ~~We'd like to go work in the *develop* branch. Type the command `git checkout develop` and hit Enter.~~
+2. ~~We'd like to go work in the *develop* branch. Type the command `git checkout develop` and hit Enter. Even though we don't have *develop* on our computer, it should still grab the stuff on the *develop* branch from the online repository. There should be a message like "Branch develop set up to track remote branch develop from origin." Don't worry about what this means, just let me know if that doesn't work out that way.~~
 
    ~~Hopefully the "git" part here makes sense. The "checkout" command is used to "check out", or switch to, another branch, in this case that branch being "develop". Note that you can only checkout a branch if there are no changes to the branch you're currently on - you have to save modifications before you go so you don't lose them! We'll talk about how to do this in a bit.~~
 
