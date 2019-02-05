@@ -33,8 +33,18 @@ Typically with Git, we'd like to work on making changes to a repository without 
 
    We've again used "git" to invoke a git command. This time, we want to know about our "branch" information, specifically which ones are available using "--list". 
    
-2. We'd like to go work in the *develop* branch. Type the command `git checkout develop` and hit Enter. 
+2. ~~We'd like to go work in the *develop* branch. Type the command `git checkout develop` and hit Enter.~~
 
-   Hopefully the "git" part here makes sense. The "checkout" command is used to "check out", or switch to, another branch, in this case that branch being "develop". Note that you can only checkout a branch if there are no changes to the branch you're currently on - you have to save modifications before you go so you don't lose them! We'll talk about how to do this in a bit.
+   ~~Hopefully the "git" part here makes sense. The "checkout" command is used to "check out", or switch to, another branch, in this case that branch being "develop". Note that you can only checkout a branch if there are no changes to the branch you're currently on - you have to save modifications before you go so you don't lose them! We'll talk about how to do this in a bit.~~
 
-3. There should be an updated README file with new instructions in this new branch. Close this README (don't save it if prompted), and re-open it using File Explorer. The tutorial continues there!
+3. ~~There should be an updated README file with new instructions in this new branch. Close this README (don't save it if prompted), and re-open it using File Explorer. The tutorial continues there!~~
+
+4. Welcome to the *develop* branch! This is typically the branch that new features will be added into the overall architecture before we know they work. However, we're going to be making our own branches to add our individual changes, and then make those branches feed into *develop*. (If this doesn't make sense now, hopefully it will in a few steps.) To make a new branch, that branches *from develop*, enter the commands (with your last name filled in):
+
+```
+git branch develop_<lastname>
+git checkout develop_<lastname>
+```
+
+   We've used the "branch" command again, this time with a new argument, "develop_<lastname>". This actually creates a new branch called *develop_<lastname>* for you to work in. Then, we "checkout", or basically move to, that branch. If you close and re-open this file, you'll notice that it's the same as the version that was in *develop*. This is an important concept - when you make a new branch, it has the exact same files and contents as the branch you were in when you created it. So right now, *develop* and *develop_<lastname>* are exactly the same! Let's change that.
+   
