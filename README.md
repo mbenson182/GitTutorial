@@ -46,5 +46,5 @@ git branch develop_<lastname>
 git checkout develop_<lastname>
 ```
 
-   We've used the "branch" command again, this time with a new argument, "develop_<lastname>". This actually creates a new branch called *develop_<lastname>* for you to work in. Then, we "checkout", or basically move to, that branch. If you close and re-open this file, you'll notice that it's the same as the version that was in *develop*. This is an important concept - when you make a new branch, it has the exact same files and contents as the branch you were in when you created it. So right now, *develop* and *develop_<lastname>* are exactly the same! Let's change that.
+   We've used the "branch" command again, this time with a new argument, "develop_lastname". This actually creates a new branch called *develop_lastname* for you to work in. Then, we "checkout", or basically move to, that branch. If you close and re-open this file, you'll notice that it's the same as the version that was in *develop*. This is an important concept - when you make a new branch, it has the exact same files and contents as the branch you were in when you created it. So right now, *develop* and *develop_lastname* are exactly the same! Let's change that.
    
