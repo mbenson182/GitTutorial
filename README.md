@@ -33,7 +33,7 @@ Typically with Git, we'd like to work on making changes to a repository without 
 
    We've again used "git" to invoke a git command. This time, we want to know about our **branch** information, specifically which ones are available using "--list". 
 
-   However, if we enter the command `git log --branches --remotes --tags --graph --oneline --decorate` and look at the red text, there are actually two branches in the remote repository: *master* and *develop*.
+   However, if we enter the command `git branch -a` (this lists all branches, local and remote) and look at the red text, there are actually a few branches in the remote repository, including *master* and *develop*.
    
 2. ~~We'd like to go work in the *develop* branch. Type the command `git checkout develop` and hit Enter. Even though we don't have *develop* on our computer, it should still grab the stuff on the *develop* branch from the online repository. There should be a message like "Branch develop set up to track remote branch develop from origin." Don't worry about what this means, just let me know if that doesn't work out that way.~~
 
